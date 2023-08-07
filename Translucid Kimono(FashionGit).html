@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionGit</title>
+    <style>
+        .small-img-group{
+            display: flex;
+            justify-content: space-between;
+        }
+        .small-img-col{
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+        .sproduct select{
+            display: block;
+            padding: 5px 10px;
+        }
+        .sproduct input{
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .sproduct input:focus{
+            outline: none;
+        }
+        .buy-btn{
+            background: black;
+            opacity: 1;
+            transition: 0.3s;
+            color: white;
+            padding: 5px 10px 5px 10px;
+        }
+        .buy-btn:hover{
+            background: #217dbb;
+        }
+        a{
+            text-decoration: none !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- ---Link To FashionGit--- -->
+    <link rel="stylesheet" href="FashionGit.css">
+    <!-- ---Box Icons--- -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="index.html" class="logo">
+            FashionGit
+        </a>
+        <!-- Menu-Icon -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- Links -->
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Shop(FashionGit).html">SHOP</a></li>
+            <li><a href="ContactUs(FaashionGit).html">CONTACT</a></li>
+            <li><a href="About(FashionGit).html">ABOUT</a></li>
+        </ul>
+        <!-- Icon -->
+        <div class="header-icon">
+            <a href="AddToCart(FashionGit).html"><i class='bx bx-cart'></i></a>
+            <i class='bx bx-search-alt-2' id="search-icon"></i>
+            <a href="Login(FashionGit).html"><i class='bx bxs-log-in-circle'></i></a>
+        </div>
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="search" placeholder="Search Here...">
+        </div>
+    </header>
+    <section class="container sproduct my-5 pt-5">
+        <div class="row mt-5">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img src="Images/Translucid.avif" alt="" class="img-fluid w-100 pb-1">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="Images/Front.avif" alt="" class="small-img" width="100%">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Images/Back.avif" alt="" class="small-img" width="100%">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Images/s.avif" alt="" class="small-img" width="100%">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Images/g.avif" alt="" class="small-img" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6>Alix Pinho</h6>
+                <h3 class="py-4">Translucid Kimono</h3>
+                <h2>$139.00</h2>
+                <select name="" id="" class="my-3">
+                    <option value="">Select Size</option>
+                    <option value="">XS</option>
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">L</option>
+                </select>
+                <input type="number" value="1">
+                <a href="AddToCart(FashionGit).html"><button class="buy-btn">Add To Cart</button></a>
+                <h4 class="mt-5 mb-5">Product Details</h4>
+                <span>
+                    Step into a world of sheer sophistication with our Translucid Kimono, a masterpiece of modern fashion that effortlessly blends comfort and style. This exquisite kimono is designed to elevate your wardrobe and make you stand out with its unique allure. Crafted with care from premium materials, it's the perfect addition to your collection for any season.
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="products" id="products">
+        <div class="heading">
+            <h2>You May Also Like</h2>
+        </div>
+        <!-- Container -->
+    <div class="products-container">
+        <div class="box">
+            <img src="Images/Barcelona.avif" alt="">
+            <h3>Barcelona Dress</h3>
+            <div class="content">
+                <span>$161</span>
+                <a href="AddToCart(FashionGit).html">Add to cart</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Images/Revolve.avif" alt="">
+            <h3>Revolve Sunny Mini Dress</h3>
+            <div class="content">
+                <span>$248</span>
+                <a href="AddToCart(FashionGit).html">Add to cart</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Images/Paris.avif" alt="">
+            <h3>Paris Gown</h3>
+            <div class="content">
+                <span>$298</span>
+                <a href="AddToCart(FashionGit).html">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <h3>FashionGit</h3>
+            <p>
+                FashionGit: Redefining style, embracing uniqueness, and honoring tradition for a timeless fashion experience that empowers self-expression and confidence.
+            </p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></i></a>
+                <a href="#"><i class='bx bxl-messenger'></i></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Support</h3>
+            <li><a href="Shop(FashionGit).html">Product</a></li>
+            <li><a href="ContactUs(FaashionGit).html">Help & Support</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>View Guides</h3>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog Posts</a></li>
+            <li><a href="#">Our Branches</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <div class="contact">
+                <span><i class='bx bxs-map'></i>250 Yangon City, Myanmar 1001</span>
+                <span><i class='bx bxs-phone'></i>+95 999 878 8822</span>
+                <span><i class='bx bxs-envelope'></i>fashiongit@gmail.com</span>
+            </div>
+        </div>
+    </section>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; 2023 FashionGit All Right Reserved</p>
+    </div>
+    <!-- Link To Js -->
+    <script src="main.js"></script>
+</body>
+</html>
